@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 463583294568392978}
   m_Layer: 0
   m_Name: Tube_UP
-  m_TagString: Enemy
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569200644203937918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.66, y: 0.04, z: 8.153318}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -22.078, y: -0.044, z: 8.153318}
+  m_LocalScale: {x: 0.55393046, y: 0.9758547, z: 0.55393046}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tubeSpeed: 2
+  pointSFX: {fileID: 8300000, guid: f8c8d4f31999d4d4e8d452ef50fc0b22, type: 3}
+  level: 1.2
 --- !u!61 &463583294568392978
 BoxCollider2D:
   m_ObjectHideFlags: 0

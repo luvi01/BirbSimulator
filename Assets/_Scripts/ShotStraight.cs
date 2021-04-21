@@ -17,7 +17,10 @@ public class ShotStraight : SteerableBehaviour
         {
             damageable.TakeDamage();
         }
-        Destroy(gameObject);
+        if (collision.CompareTag("Tube"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Start()
@@ -32,7 +35,12 @@ public class ShotStraight : SteerableBehaviour
     void Update()
     {
         if (gm.gameState != GameManager.GameState.GAME &
-             gm.gameState != GameManager.GameState.RESUME) return;
+             gm.gameState != GameManager.GameState.RESUME)
+        {
+            rb.gravityScale = 0.0f;
+            rb.velocity = Vector2.up * 0.0f;
+            return;
+        }
 
         Thrust(direction.x, 0);
     }

@@ -33,6 +33,7 @@ public class HighScoreTable : MonoBehaviour
 
                 activePlayer.UpdatePlayer(gm.pontos);
                 gm.UpdatePlayer(activePlayer);
+                gm.pontos = 0;
             }
             catch { }
             
@@ -57,7 +58,6 @@ public class HighScoreTable : MonoBehaviour
             var i = 0;
             foreach (var p in cachedPlayers)
             {
-                Debug.Log(p.Name);
                 Transform entryTransform = Instantiate(entryTemplate, entryContainer);
                 RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
                 entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * i);
