@@ -10,12 +10,18 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
     public int experience;
     private float _lastShootTimestamp = 0.0f;
     public float shootDelay = 2.5f;
-
+    
+    // Health Bar
+    public int maxHealth = 5;
+    public int currentHealth;
+    public HealthBar healthBar;
 
 
     public void Start()
     {
         gm = GameManager.GetInstance();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void Shoot()
@@ -27,9 +33,11 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
         Instantiate(bullet, arma01.position, Quaternion.identity);
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        Die();
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0) Die();
     }
 
     public void Die()

@@ -15,7 +15,7 @@ public class ShotStraight : SteerableBehaviour
         IDamageable damageable = collision.gameObject.GetComponent(typeof(IDamageable)) as IDamageable;
         if (!(damageable is null))
         {
-            damageable.TakeDamage();
+            damageable.TakeDamage(1);
         }
         if (collision.CompareTag("Tube"))
         {

@@ -35,9 +35,9 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
         Instantiate(bullet, arma01.position, Quaternion.identity);
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        gm.vidas--;
+        gm.vidas -= damage;
         if (gm.vidas <= 0) Die();
     }
 
@@ -94,7 +94,7 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
         if (collision.CompareTag("Enemy") || collision.CompareTag("Tube"))
         {
             //Destroy(collision.gameObject);
-            TakeDamage();
+            TakeDamage(1);
         }
     }
 
