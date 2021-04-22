@@ -39,7 +39,7 @@ Tela de Menu ==> Tela do Jogo ==> Tela Final do Jogo
 ## Personagens
 
 * Jogável:
-    - Flup: Pássaro biônico controlado pelo jogador.
+- Flup: Pássaro biônico controlado pelo jogador.
 
 * Não Jogável:
     - Abelha Geneticamente Modificada: Inimiga principal do jogo. Com o tempo, vai ganhando novas "habilidades". Sua missão é atrapalhar e destruir o jogador, atirando nele constantemente seja qual for a sua posiçao na tela.
@@ -47,19 +47,19 @@ Tela de Menu ==> Tela do Jogo ==> Tela Final do Jogo
 ## Cronograma, Escopo e Requisitos
 
 Após a versão beta do jogo, foi possível coletar alguns feedbacks interessantes:
-    * Colocar mais vidas e fazer o boss mais completo (mais vidas, features) LM
-    * Fazer score do jogador (por cano) LV Done
-    * Melhorar tela final (deixar claro se ganhou ou perdeu) LV Done
-    * Mudar o tiro para algo real (tirar a bola verde) LM
-    * Consertar os sons dos tiros e contatos LM
-    * Animar o boss LM
-    * Consertar o PAUSE LV Done
-    * Fazer GDD e colocar no README LM
-    * Limitar movimento do passaro nas extremidades da tela LM Done
-    * Canos serem HandMade (editor de fase) LV -- Hold
-    * Nivelar som do jogo padrão LM
-    * Acertar hitboxes do passaro com os canos LV Done
-    * Trocar background móvel LM
+* Colocar mais vidas e fazer o boss mais completo (mais vidas, features) LM
+* Fazer score do jogador (por cano) LV Done
+* Melhorar tela final (deixar claro se ganhou ou perdeu) LV Done
+* Mudar o tiro para algo real (tirar a bola verde) LM
+* Consertar os sons dos tiros e contatos LM
+* Animar o boss LM
+* Consertar o PAUSE LV Done
+* Fazer GDD e colocar no README LM
+* Limitar movimento do passaro nas extremidades da tela LM Done
+* Canos serem HandMade (editor de fase) LV -- Hold
+* Nivelar som do jogo padrão LM
+* Acertar hitboxes do passaro com os canos LV Done
+* Trocar background móvel LM
 
 ## Definições gerais
 
