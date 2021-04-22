@@ -14,8 +14,6 @@ O jogo consiste em uma mistura de dois estilos muito conhecidos. O primeiro é u
 
 ## Arte
 
-Será um jogo 2D ou 3D? Caso 2D, pixel art? Digital art? Caso 3D, low poly? High poly? Por que estou escolhendo fazer um jogo com este estilo estético? Questão de engrandecer a história? Combina mais com as mecânicas? Questão de orçamento ou gerenciamento de tempo?
-
 O jogo é no formato 2D, com uma arte semelhante ao estilo do Mario Bros. Uma estética amigável e bem leve. A ideia é torná-la a mais simples e menos vulgar possível para que os fans dos dois estilos de jogo possam aproveitar ao máximo a experiência e relembrar seus tempos antigos de video game.
 
 ## Música/Trilha Sonora
@@ -23,8 +21,6 @@ O jogo é no formato 2D, com uma arte semelhante ao estilo do Mario Bros. Uma es
 Wii Sports Theme (https://youtu.be/d5c4KOopwLs) retirada da febre da primeira década de 2000, que acabou sendo um dos jogos mais jogados do mundo. Com sua competitividade íntriseca, nostalgia a milhão, a música do Wii Sports conforta todos aqueles jogadores que gostam de reviver suas lembranças e aproveitar um bom jogo de época.
 
 ## Interface
-
-Como será a interface de usuário dos jogadores? Descreva como serão os botões, como é possível interagir com eles. Existem formas de interagir com o mundo? Como isso será apresentado para o jogador.
 
 A interface adotada é a mais simples e intuitiva possível. Inicialmente, o jogador coloca seu nome de usuário. Depois ele clica no botão "INICIAR" para começar o jogo. Enquanto joga, na tela aparecerá a contabilização de quantos pontos estão sendo feitos e as vidas de ambos os personagens (passaro e abelha inimiga). Quando acabar, um Leaderboard surgirá a fim de mostrar a comparação de desempenho entre amigos!
 
@@ -34,8 +30,6 @@ Suas teclas de comando são SPACE (para bater as asas e desviar dos tubos) e WAS
 
 ## Dificuldade
 
-Quais serão as dificuldades do jogo? Terá inimigos? Elementos de cenário? Itens escondidos? Puzzles? Etc.
-
 A dificuldade do jogo se baseia na evolução que a abelha inimiga vai passando com o tempo. Ela possui algumas features que dificultam sua destruição, potencializam seus ataques ou, até mesmo, a tornem inálvejável por um tempo. Além disso, o jogador terá que se preocupar constantemente em desviar dos tubos que surgem na tela de forma aleatória, apenas com 3 tentativas possíveis. 
 
 ## Fluxo do jogo
@@ -44,28 +38,28 @@ Tela de Menu ==> Tela do Jogo ==> Tela Final do Jogo
 
 ## Personagens
 
-·Jogável:
+* Jogável:
     - Flup: Pássaro biônico controlado pelo jogador.
 
-·Não Jogável:
+* Não Jogável:
     - Abelha Geneticamente Modificada: Inimiga principal do jogo. Com o tempo, vai ganhando novas "habilidades". Sua missão é atrapalhar e destruir o jogador, atirando nele constantemente seja qual for a sua posiçao na tela.
 
 ## Cronograma, Escopo e Requisitos
 
 Após a versão beta do jogo, foi possível coletar alguns feedbacks interessantes:
-    - Colocar mais vidas e fazer o boss mais completo (mais vidas, features) LM
-    - Fazer score do jogador (por cano) LV Done
-    - Melhorar tela final (deixar claro se ganhou ou perdeu) LV Done
-    - Mudar o tiro para algo real (tirar a bola verde) LM
-    - Consertar os sons dos tiros e contatos LM
-    - Animar o boss LM
-    - Consertar o PAUSE LV Done
-    - Fazer GDD e colocar no README LM
-    - Limitar movimento do passaro nas extremidades da tela LM Done
-    - Canos serem HandMade (editor de fase) LV -- Hold
-    - Nivelar som do jogo padrão LM
-    - Acertar hitboxes do passaro com os canos LV Done
-    - Trocar background móvel LM
+    * Colocar mais vidas e fazer o boss mais completo (mais vidas, features) LM
+    * Fazer score do jogador (por cano) LV Done
+    * Melhorar tela final (deixar claro se ganhou ou perdeu) LV Done
+    * Mudar o tiro para algo real (tirar a bola verde) LM
+    * Consertar os sons dos tiros e contatos LM
+    * Animar o boss LM
+    * Consertar o PAUSE LV Done
+    * Fazer GDD e colocar no README LM
+    * Limitar movimento do passaro nas extremidades da tela LM Done
+    * Canos serem HandMade (editor de fase) LV -- Hold
+    * Nivelar som do jogo padrão LM
+    * Acertar hitboxes do passaro com os canos LV Done
+    * Trocar background móvel LM
 
 ## Definições gerais
 
