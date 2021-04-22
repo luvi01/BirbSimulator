@@ -39,7 +39,7 @@ Tela de Menu ==> Tela do Jogo ==> Tela Final do Jogo
 ## Personagens
 
 * Jogável:
-- Flup: Pássaro biônico controlado pelo jogador.
+    - Flup: Pássaro biônico controlado pelo jogador.
 
 * Não Jogável:
     - Abelha Geneticamente Modificada: Inimiga principal do jogo. Com o tempo, vai ganhando novas "habilidades". Sua missão é atrapalhar e destruir o jogador, atirando nele constantemente seja qual for a sua posiçao na tela.
@@ -63,8 +63,8 @@ Após a versão beta do jogo, foi possível coletar alguns feedbacks interessant
 
 ## Definições gerais
 
-Gênero: Endless Run / Side Scroller / Shoot 'Em Up;
+* Gênero: Endless Run / Side Scroller / Shoot 'Em Up;
 
-Plataformas: Unity 2D;
+* Plataformas: Unity 2D;
 
-Público alvo: Jogadores a partir de 3 anos, foco na nostalgia e nos fans dos dois estilos referência.
+* Público alvo: Jogadores a partir de 3 anos, foco na nostalgia e nos fans dos dois estilos referência.
