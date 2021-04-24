@@ -59,6 +59,9 @@ TextureImporter:
   - first:
       213: -2257318837438534525
     second: BirdSpriteBig_18
+  - first:
+      213: -2694058217070234010
+    second: BirdSpriteBig_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -550,6 +553,27 @@ TextureImporter:
       bones: []
       spriteID: 38cada52a746ca0e0800000000000000
       internalID: -2257318837438534525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdSpriteBig_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6667e474358cc9ad0800000000000000
+      internalID: -2694058217070234010
       vertices: []
       indices: 
       edges: []

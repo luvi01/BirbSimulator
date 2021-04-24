@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Tube
+  - Powerup
+  - PowerupTiro
+  - Tiro
   layers:
   - Default
   - TransparentFX

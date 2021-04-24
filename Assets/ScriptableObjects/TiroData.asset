@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7463f48a88124cd8bce8921b56804a7, type: 3}
   m_Name: TiroData
   m_EditorClassIdentifier: 
-  thrustIntensity: {x: 10, y: 10}
+  thrustIntensity: {x: 10, y: 0}

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ShotBehaviour : SteerableBehaviour
 {
     GameManager gm;
+    public int damage;
+
 
     public void Start()
     {
@@ -31,7 +33,7 @@ public class ShotBehaviour : SteerableBehaviour
         IDamageable damageable = collision.gameObject.GetComponent(typeof(IDamageable)) as IDamageable;
         if (!(damageable is null))
         {
-            damageable.TakeDamage(1);
+            damageable.TakeDamage(damage);
         }
         Destroy(gameObject);
 

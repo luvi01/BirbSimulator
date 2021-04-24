@@ -17,7 +17,7 @@ public class ShotStraight : SteerableBehaviour
         {
             damageable.TakeDamage(1);
         }
-        if (collision.CompareTag("Tube"))
+        if (collision.CompareTag("Tube") || collision.CompareTag("Tiro"))
         {
             Destroy(gameObject);
         }
