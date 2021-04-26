@@ -11,13 +11,18 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
 
     public Transform arma01;
     public float shootDelay = 1.0f;
-    public AudioClip shootSFX;
+    public AudioClip normalShootSFX;
+    public AudioClip powerShootSFX;
     private GameManager gm;
     private float gravity;
     private bool invencible;
-    public float maxTimer = 4;
-    public float timer = 1;
+    // public float timer = 1;
     private bool maxGun;
+
+    // Timer Bar
+    public float maxTimer = 6f;
+    public float currentTime;
+    public TimeBar timeBar;
 
 
     private float _lastShootTimestamp = 0.0f;
@@ -29,19 +34,21 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
         gravity = rb.gravityScale;
         animator = GetComponent<Animator>();
         gm.vidas = 1;
+        timeBar.gameObject.SetActive(false);
     }
 
     public void Shoot()
     {
         if (Time.time - _lastShootTimestamp < shootDelay) return;
-        AudioManager.PlaySFX(shootSFX);
-        if (maxGun & timer < maxTimer)
+        if (maxGun & currentTime >= 0)
         {
+            AudioManager.PlaySFX(powerShootSFX);
             _lastShootTimestamp = Time.time;
             Instantiate(bullet1, arma01.position, Quaternion.identity);
         }
         else
         {
+            AudioManager.PlaySFX(normalShootSFX);
             _lastShootTimestamp = Time.time;
             Instantiate(bullet, arma01.position, Quaternion.identity);
             maxGun = false;
@@ -104,7 +111,23 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
         {
             animator.SetFloat("Velocity", -1.0f);
         }
-        timer += Time.deltaTime;
+
+        // Timer bar
+        if(maxGun){
+            if (currentTime >= 0)
+            {
+                currentTime -= Time.deltaTime;
+                timeBar.SetTime(currentTime);
+            }
+            else
+            {
+                timeBar.gameObject.SetActive(false);
+                maxGun = false;
+            }
+        }
+            
+    
+        
 
     }
 
@@ -126,8 +149,17 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
         if (collision.CompareTag("PowerupTiro"))
         {
             Destroy(collision.gameObject);
-            timer = 0;
             maxGun = true;
+
+            currentTime = maxTimer;
+            timeBar.SetMaxTime(maxTimer);
+            
+            timeBar.gameObject.SetActive(true);
+        }
+        if (collision.CompareTag("Poop"))
+        {
+            Destroy(collision.gameObject);
+            TakeDamage(1);
         }
     }
 

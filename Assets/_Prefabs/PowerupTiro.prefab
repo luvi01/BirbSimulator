@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tubeSpeed: 0
-  pointSFX: {fileID: 0}
+  pointSFX: {fileID: 8300000, guid: afe1a49a3c15fd7488f81ea920eaeb25, type: 3}
   level: 0
 --- !u!61 &4493355527987570642
 BoxCollider2D:
