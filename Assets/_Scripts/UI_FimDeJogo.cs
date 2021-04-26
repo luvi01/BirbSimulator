@@ -13,6 +13,7 @@ public class UI_FimDeJogo : MonoBehaviour
     void OnEnable()
     {
         gm = GameManager.GetInstance();
+        gm.canos = 0;
 
         if (gm.vidas <= 0)
         {

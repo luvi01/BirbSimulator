@@ -10,7 +10,9 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
     public int experience;
     private float _lastShootTimestamp = 0.0f;
     public float shootDelay = 2.5f;
-    
+    public AudioClip takeDamage;
+
+
     // Health Bar
     public int maxHealth = 5;
     public int currentHealth;
@@ -37,6 +39,10 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        AudioManager.PlaySFX(takeDamage);
+
+
+        gm.pontos += 5 / (gm.canos+1);
         if (currentHealth <= 0) Die();
     }
 

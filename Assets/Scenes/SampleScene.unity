@@ -789,6 +789,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1745254868}
     m_Modifications:
+    - target: {fileID: 23996174405626965, guid: 1488fd5132ffd4c5a84289ee2c843df4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002404322472329700, guid: 1488fd5132ffd4c5a84289ee2c843df4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 224
+      objectReference: {fileID: 0}
     - target: {fileID: 8971020134142852701, guid: 1488fd5132ffd4c5a84289ee2c843df4,
         type: 3}
       propertyPath: m_Name
@@ -904,10 +914,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8971020134355763383, guid: 1488fd5132ffd4c5a84289ee2c843df4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52
+      objectReference: {fileID: 0}
     - target: {fileID: 8971020134847562506, guid: 1488fd5132ffd4c5a84289ee2c843df4,
         type: 3}
       propertyPath: m_Text
-      value: Flup Bird
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971020134936679772, guid: 1488fd5132ffd4c5a84289ee2c843df4,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971020135041900690, guid: 1488fd5132ffd4c5a84289ee2c843df4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: 8971020135041900691, guid: 1488fd5132ffd4c5a84289ee2c843df4,
         type: 3}
@@ -1354,6 +1379,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1745254868}
     m_Modifications:
+    - target: {fileID: 7824436547207915257, guid: 5e371920dfefb4ba08771fa8528d4020,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7824436547891755872, guid: 5e371920dfefb4ba08771fa8528d4020,
         type: 3}
       propertyPath: m_Name
@@ -1503,6 +1533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Retornar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824436549070270924, guid: 5e371920dfefb4ba08771fa8528d4020,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7824436547891755879, guid: 5e371920dfefb4ba08771fa8528d4020, type: 3}
@@ -1895,6 +1930,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Voltar
       objectReference: {fileID: 0}
+    - target: {fileID: 6293909378146151729, guid: c225e5177bcc148049a9ee7ec8d36325,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6293909378146151730, guid: c225e5177bcc148049a9ee7ec8d36325,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2060,6 +2100,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -46
       objectReference: {fileID: 0}
+    - target: {fileID: 6293909379207713823, guid: c225e5177bcc148049a9ee7ec8d36325,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6293909379332008439, guid: c225e5177bcc148049a9ee7ec8d36325,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2074,6 +2119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293909379546951138, guid: c225e5177bcc148049a9ee7ec8d36325,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6293909379546951139, guid: c225e5177bcc148049a9ee7ec8d36325,
         type: 3}
@@ -2257,8 +2307,9 @@ MonoBehaviour:
   rb: {fileID: 0}
   bullet: {fileID: 764660535241668383, guid: 29f4e3146358f494cb8475e99bd7d925, type: 3}
   arma01: {fileID: 1108422054}
-  experience: 0
+  experience: 100
   shootDelay: 1.5
+  takeDamage: {fileID: 8300000, guid: 0b34605e15ce6497fb6b7e2e0a2641d3, type: 3}
   maxHealth: 15
   currentHealth: 0
   healthBar: {fileID: 669672630}

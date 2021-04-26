@@ -19,7 +19,7 @@ public class MoveItem : MonoBehaviour
 
     float CalculateSpeed()
     {
-        var points = gm.pontos;
+        var points = gm.canos;
         Debug.Log(level);
         if (points < 2)
         {

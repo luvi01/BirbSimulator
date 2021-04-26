@@ -13,6 +13,13 @@ public class UI_Pontos : MonoBehaviour
    
    void Update()
    {
-       textComp.text = gm.pontos.ToString();
-   }
+        if (gm.pontos == 0)
+        {
+            textComp.text = "0";
+        }
+        else
+        {
+            textComp.text = gm.pontos.ToString();
+        }
+    }
 }

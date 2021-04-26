@@ -20,7 +20,7 @@ public class MoveTube : MonoBehaviour
 
     float CalculateSpeed()
     {
-        var points = gm.pontos;
+        var points = gm.canos;
         Debug.Log(level);
         if (points < 2)
         {
@@ -48,7 +48,9 @@ public class MoveTube : MonoBehaviour
 
         if (!counted && tubeX < posPlayer.x)
         {
+            gm.canos += 1;
             gm.pontos += 1;
+
             counted = true;
             AudioManager.PlaySFX(pointSFX);
 

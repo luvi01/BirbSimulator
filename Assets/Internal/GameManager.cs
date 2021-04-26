@@ -14,6 +14,7 @@ public class GameManager
     public GameState gameState { get; private set; }
     public int vidas;
     public int pontos;
+    public int canos;
     private Dictionary<string, Player> playerDict;
 
     private static GameManager _instance;
