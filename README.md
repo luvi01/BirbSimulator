@@ -30,7 +30,7 @@ Suas teclas de comando são SPACE (para bater as asas e desviar dos tubos) e WAS
 
 ## Dificuldade
 
-A dificuldade do jogo se baseia na evolução que a abelha inimiga vai passando com o tempo. Ela possui algumas features que dificultam sua destruição, potencializam seus ataques ou, até mesmo, a tornem inálvejável por um tempo. Além disso, o jogador terá que se preocupar constantemente em desviar dos tubos que surgem na tela de forma aleatória, apenas com 3 tentativas possíveis. 
+A dificuldade do jogo se baseia na evolução que o passaro vai enfrentando com o tempo. Existem algumas features que podem tanto facilitar quanto dificultar a jogabilidade. É possível potencializar seus ataques ou, até mesmo, se tornem inálvejável por um tempo. Além disso, o jogador terá que se preocupar constantemente em desviar dos tubos que surgem na tela de forma aleatória. 
 
 ## Fluxo do jogo
 
