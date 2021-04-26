@@ -145,7 +145,7 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
             Destroy(collision.gameObject);
             animator.SetFloat("Powerup", 1.0f);
             invencible = true;
-            gm.pontos += 10;
+            gm.pontos += 5;
         }
         if (collision.CompareTag("PowerupTiro"))
         {
@@ -156,7 +156,7 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
             timeBar.SetMaxTime(maxTimer);
             
             timeBar.gameObject.SetActive(true);
-            gm.pontos += 10;
+            gm.pontos += 5;
 
         }
         if (collision.CompareTag("Poop"))

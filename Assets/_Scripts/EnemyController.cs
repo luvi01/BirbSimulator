@@ -41,8 +41,15 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
         healthBar.SetHealth(currentHealth);
         AudioManager.PlaySFX(takeDamage);
 
-
-        gm.pontos += 5 / (gm.canos+1);
+        var tempPontos = 5 / (gm.canos + 1);
+        if (tempPontos != 0)
+        {
+            gm.pontos += tempPontos;
+        }
+        else
+        {
+            gm.pontos += 1;
+        }
         if (currentHealth <= 0) Die();
     }
 
@@ -50,7 +57,7 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
     {
         gm = GameManager.GetInstance();
         var player = gm.GetActivePlayer();
-        gm.pontos += experience;
+        gm.pontos += experience/gm.canos;
         Debug.Log("AAA");
         Debug.Log(gm.pontos);
         player.CurrentScore += experience;
