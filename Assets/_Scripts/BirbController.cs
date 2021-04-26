@@ -25,6 +25,7 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
     public TimeBar timeBar;
 
 
+
     private float _lastShootTimestamp = 0.0f;
 
 
@@ -100,6 +101,8 @@ public class BirbController : SteerableBehaviour, IShooter, IDamageable
             Shoot();
 
         }
+
+
 
         if (Input.GetAxisRaw("Jump") != 0)
         {

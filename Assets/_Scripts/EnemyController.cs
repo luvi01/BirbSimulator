@@ -58,12 +58,10 @@ public class EnemyController : SteerableBehaviour, IShooter, IDamageable
         gm = GameManager.GetInstance();
         var player = gm.GetActivePlayer();
         gm.pontos += experience/gm.canos;
-        Debug.Log("AAA");
         Debug.Log(gm.pontos);
         player.CurrentScore += experience;
         Destroy(gameObject);
         gm.ChangeState(GameManager.GameState.ENDGAME);
-
     }
 
 
